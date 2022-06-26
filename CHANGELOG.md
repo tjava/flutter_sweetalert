@@ -1,3 +1,5 @@
-## 0.0.1
+## 0.0.7
 
-* TODO: Describe initial release.
+Simple alert show a dialog with no animated icon
+
+Icon alert show a dialog with animated icon of four type of alert
