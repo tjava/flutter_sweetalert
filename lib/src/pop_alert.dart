@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sweetalert/src/layout.dart';
+import 'package:pop_alert/src/layout.dart';
 
-class FlutterSweetalert {
-  const FlutterSweetalert();
+class PopAlert {
+  const PopAlert();
 
   static void simpleAlert({
     required context,

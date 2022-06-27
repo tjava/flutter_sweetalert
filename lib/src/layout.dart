@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sweetalert/src/responsiveness/large_screen_alert.dart';
-import 'package:flutter_sweetalert/src/responsiveness/medium_screen_alert.dart';
-import 'package:flutter_sweetalert/src/responsiveness/responsiveness.dart';
-import 'package:flutter_sweetalert/src/responsiveness/small_screen_alert.dart';
+import 'package:pop_alert/src/responsiveness/large_screen_alert.dart';
+import 'package:pop_alert/src/responsiveness/medium_screen_alert.dart';
+import 'package:pop_alert/src/responsiveness/responsiveness.dart';
+import 'package:pop_alert/src/responsiveness/small_screen_alert.dart';
 
 class Layout extends StatelessWidget {
   final String? type;

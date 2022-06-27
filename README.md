@@ -1,10 +1,10 @@
-# Flutter Sweetalert
+# Pop Alert
 
-### _Sweet alert for flutter, A beautiful replacement for Flutter "alert"._
+### _Pop alert for flutter, A beautiful replacement for Flutter "alert"._
 
 <p align="center">
   <a href="">
-    <img alt="FlutterSweetAlert" src="assets/images/FlutterSweetalert.gif" width="300">
+    <img alt="PopAlert" src="assets/images/Popalert.gif" width="300">
   </a>
 </p>
 
@@ -14,13 +14,13 @@
 
 ```yaml
 dependencies:
-  flutter_sweetalert: ^0.0.7
+  pop_alert: ^0.0.7
 ```
 
 2. Import the package and use it in your Flutter App.
 
 ```dart
-import 'package:flutter_sweetalert/flutter_sweetalert.dart';
+import 'package:pop_alert/pop_alert.dart';
 ```
 
 ## Example
@@ -35,7 +35,7 @@ There are a number of properties that you can modify:
 #### Simple alert show a dialog with no animated icon
 
 ```yaml
-FlutterSweetalert.simpleAlert(
+PopAlert.simpleAlert(
     context: context,
     title: 'Hello world!',
     button: 'OK',
@@ -43,7 +43,7 @@ FlutterSweetalert.simpleAlert(
 ```
 
 ```yaml
-FlutterSweetalert.simpleAlert(
+PopAlert.simpleAlert(
     context: context,
     title: 'Title goes here!',
     text: '...and text goes here!',
@@ -56,7 +56,7 @@ FlutterSweetalert.simpleAlert(
 #### The icon can be of four type `success`, `failed`, `info`, and `warning`.
 
 ```yaml
-FlutterSweetalert.iconAlert(
+PopAlert.iconAlert(
     context: context,
     icon: 'success',
     title: 'Good job!',
@@ -65,7 +65,7 @@ FlutterSweetalert.iconAlert(
 ```
 
 ```yaml
-FlutterSweetalert.iconAlert(
+PopAlert.iconAlert(
     context: context,
     icon: 'success',
     title: 'Good job!',

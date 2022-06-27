@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sweetalert/src/animations/icon_animation.dart';
-import 'package:flutter_sweetalert/src/constants/colors.dart';
+import 'package:pop_alert/src/animations/icon_animation.dart';
+import 'package:pop_alert/src/constants/colors.dart';
 
 class MediumScreenAlert extends StatefulWidget {
   final String? type;
