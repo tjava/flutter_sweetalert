@@ -1,10 +1,10 @@
 # Pop Alert
 
-### _Pop alert for flutter, A beautiful replacement for Flutter "alert"._
+### _Pop alert is a responsive and animated alert / dialog for flutter, A beautiful replacement for Flutter "alert / dialog"._
 
 <p align="center">
   <a href="">
-    <img alt="PopAlert" src="assets/images/Popalert.gif" width="300">
+    <img alt="PopAlert" src="https://raw.githubusercontent.com/tjava/pop_alert/master/assets/images/Popalert.gif" width="300">
   </a>
 </p>
 
