@@ -1,6 +1,6 @@
 name: pop_alert
 description: Pop alert is a responsive and animated alert / dialog for flutter, A beautiful replacement for Flutter "alert / dialog".
-version: 0.0.10
+version: 0.0.11
 homepage: https://github.com/tjava/pop_alert
 
 environment:
