@@ -58,7 +58,7 @@ PopAlert.simpleAlert(
 ```yaml
 PopAlert.iconAlert(
     context: context,
-    icon: 'success',
+    icon: PopAlertIcon.success,
     title: 'Good job!',
     button: 'OK',
 )
