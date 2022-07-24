@@ -34,7 +34,7 @@ class _IconAnimationState extends State<IconAnimation>
       height: 100,
       width: 100,
       child: Lottie.asset(
-        'assets/animations/${widget.icon}.json',
+        widget.icon!,
         repeat: false,
         controller: controller,
         onLoaded: (composition) {

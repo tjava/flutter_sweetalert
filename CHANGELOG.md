@@ -10,3 +10,8 @@ fix docs example gif url.
 ## 0.0.11
 
 edit readme file.
+
+## 0.0.28
+
+add exmaple.
+change iconAlert string paramete to PopAlertIcon static property.

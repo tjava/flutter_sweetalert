@@ -14,7 +14,7 @@
 
 ```yaml
 dependencies:
-  pop_alert: ^0.0.11
+  pop_alert: ^0.0.28
 ```
 
 2. Import the package and use it in your Flutter App.
@@ -67,7 +67,7 @@ PopAlert.iconAlert(
 ```yaml
 PopAlert.iconAlert(
     context: context,
-    icon: 'success',
+    icon: PopAlertIcon.success,
     title: 'Good job!',
     text: 'You clicked the button!',
     button: 'OK',

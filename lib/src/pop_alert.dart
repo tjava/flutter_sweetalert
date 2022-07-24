@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pop_alert/src/layout.dart';
 
 class PopAlert {
-  const PopAlert();
-
   static void simpleAlert({
     required context,
     required String title,
@@ -41,4 +39,13 @@ class PopAlert {
       ),
     );
   }
+}
+
+class PopAlertIcon {
+  static const success = 'packages/pop_alert/assets/animations/success.json';
+  static const failed = 'packages/pop_alert/assets/animations/failed.json';
+  static const info = 'packages/pop_alert/assets/animations/info.json';
+  static const warning = 'packages/pop_alert/assets/animations/warning.json';
+  static const searching =
+      'packages/pop_alert/assets/animations/searching.json';
 }
