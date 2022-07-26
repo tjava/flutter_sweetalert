@@ -5,13 +5,17 @@ Icon alert show a dialog with animated icon of four type of alert.
 
 ## 0.0.10
 
-fix docs example gif url.
+Fix docs example gif url.
 
 ## 0.0.11
 
-edit readme file.
+Edit readme file.
 
 ## 0.0.28
 
-add exmaple.
-change iconAlert string paramete to PopAlertIcon static property.
+Add exmaple.
+Change iconAlert string paramete to PopAlertIcon static property.
+
+## 0.0.30
+
+Edit exmaple.

@@ -14,7 +14,7 @@
 
 ```yaml
 dependencies:
-  pop_alert: ^0.0.28
+  pop_alert: ^0.0.30
 ```
 
 2. Import the package and use it in your Flutter App.
