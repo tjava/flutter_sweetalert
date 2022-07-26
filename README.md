@@ -25,7 +25,7 @@ import 'package:pop_alert/pop_alert.dart';
 
 ## Example
 
-There are a number of properties that you can modify:
+There are a numbers of properties that you can modify:
 
 - icon
 - title

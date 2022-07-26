@@ -14,7 +14,7 @@ Edit readme file.
 ## 0.0.28
 
 Add exmaple.
-Change iconAlert string paramete to PopAlertIcon static property.
+Change iconAlert string parameter to PopAlertIcon static property.
 
 ## 0.0.30
 
