@@ -3,9 +3,9 @@ import 'package:pop_alert/src/animations/icon_animation.dart';
 import 'package:pop_alert/src/constants/colors.dart';
 
 class LargeScreenAlert extends StatefulWidget {
-  final String? type;
+  final String type;
   final String? icon;
-  final String? title;
+  final String title;
   final String? text;
   final String? button;
   const LargeScreenAlert({
@@ -46,7 +46,13 @@ class _LargeScreenAlertState extends State<LargeScreenAlert>
     controller.forward();
   }
 
-  Widget _simple({String? title, String? text, String? button}) {
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  Widget _simple({required String title, String? text, String? button}) {
     if (text == null) {
       return Container(
         height: 180,
@@ -62,7 +68,7 @@ class _LargeScreenAlertState extends State<LargeScreenAlert>
           children: [
             const SizedBox(height: 40),
             Text(
-              title!,
+              title,
               style: TextStyle(
                 color: black,
                 fontSize: 20,
@@ -113,7 +119,7 @@ class _LargeScreenAlertState extends State<LargeScreenAlert>
         children: [
           const SizedBox(height: 25),
           Text(
-            title!,
+            title,
             style: TextStyle(
               color: black,
               fontSize: 25,
@@ -163,7 +169,8 @@ class _LargeScreenAlertState extends State<LargeScreenAlert>
     );
   }
 
-  Widget _icon({String? icon, String? title, String? text, String? button}) {
+  Widget _icon(
+      {String? icon, required String title, String? text, String? button}) {
     if (text == null) {
       return Container(
         height: 280,
@@ -181,7 +188,7 @@ class _LargeScreenAlertState extends State<LargeScreenAlert>
             IconAnimation(icon: icon),
             const SizedBox(height: 25),
             Text(
-              title!,
+              title,
               style: TextStyle(
                 color: black,
                 fontSize: 25,
@@ -234,7 +241,7 @@ class _LargeScreenAlertState extends State<LargeScreenAlert>
           IconAnimation(icon: icon),
           const SizedBox(height: 20),
           Text(
-            title!,
+            title,
             style: TextStyle(
               color: black,
               fontSize: 25,

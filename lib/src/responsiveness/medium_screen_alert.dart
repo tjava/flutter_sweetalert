@@ -3,9 +3,9 @@ import 'package:pop_alert/src/animations/icon_animation.dart';
 import 'package:pop_alert/src/constants/colors.dart';
 
 class MediumScreenAlert extends StatefulWidget {
-  final String? type;
+  final String type;
   final String? icon;
-  final String? title;
+  final String title;
   final String? text;
   final String? button;
   const MediumScreenAlert({
@@ -46,7 +46,13 @@ class _MediumScreenAlertState extends State<MediumScreenAlert>
     controller.forward();
   }
 
-  Widget _simple({String? title, String? text, String? button}) {
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  Widget _simple({required String title, String? text, String? button}) {
     if (text == null) {
       return Container(
         height: 160,
@@ -62,7 +68,7 @@ class _MediumScreenAlertState extends State<MediumScreenAlert>
           children: [
             const SizedBox(height: 40),
             Text(
-              title!,
+              title,
               style: TextStyle(
                 color: black,
                 fontSize: 20,
@@ -113,7 +119,7 @@ class _MediumScreenAlertState extends State<MediumScreenAlert>
         children: [
           const SizedBox(height: 25),
           Text(
-            title!,
+            title,
             style: TextStyle(
               color: black,
               fontSize: 20,
@@ -163,7 +169,8 @@ class _MediumScreenAlertState extends State<MediumScreenAlert>
     );
   }
 
-  Widget _icon({String? icon, String? title, String? text, String? button}) {
+  Widget _icon(
+      {String? icon, required String title, String? text, String? button}) {
     if (text == null) {
       return Container(
         height: 260,
@@ -181,7 +188,7 @@ class _MediumScreenAlertState extends State<MediumScreenAlert>
             IconAnimation(icon: icon),
             const SizedBox(height: 20),
             Text(
-              title!,
+              title,
               style: TextStyle(
                 color: black,
                 fontSize: 20,
@@ -234,7 +241,7 @@ class _MediumScreenAlertState extends State<MediumScreenAlert>
           IconAnimation(icon: icon),
           const SizedBox(height: 20),
           Text(
-            title!,
+            title,
             style: TextStyle(
               color: black,
               fontSize: 20,

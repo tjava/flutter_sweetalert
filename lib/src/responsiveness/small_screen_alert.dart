@@ -3,9 +3,9 @@ import 'package:pop_alert/src/animations/icon_animation.dart';
 import 'package:pop_alert/src/constants/colors.dart';
 
 class SmallScreenAlert extends StatefulWidget {
-  final String? type;
+  final String type;
   final String? icon;
-  final String? title;
+  final String title;
   final String? text;
   final String? button;
   const SmallScreenAlert({
@@ -46,7 +46,13 @@ class _SmallScreenAlertState extends State<SmallScreenAlert>
     controller.forward();
   }
 
-  Widget _simple({String? title, String? text, String? button}) {
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  Widget _simple({required String title, String? text, String? button}) {
     if (text == null) {
       return Container(
         height: 180,
@@ -62,7 +68,7 @@ class _SmallScreenAlertState extends State<SmallScreenAlert>
           children: [
             const SizedBox(height: 50),
             Text(
-              title!,
+              title,
               style: TextStyle(
                 color: black,
                 fontSize: 20,
@@ -113,7 +119,7 @@ class _SmallScreenAlertState extends State<SmallScreenAlert>
         children: [
           const SizedBox(height: 30),
           Text(
-            title!,
+            title,
             style: TextStyle(
               color: black,
               fontSize: 20,
@@ -163,7 +169,8 @@ class _SmallScreenAlertState extends State<SmallScreenAlert>
     );
   }
 
-  Widget _icon({String? icon, String? title, String? text, String? button}) {
+  Widget _icon(
+      {String? icon, required String title, String? text, String? button}) {
     if (text == null) {
       return Container(
         height: 260,
@@ -181,7 +188,7 @@ class _SmallScreenAlertState extends State<SmallScreenAlert>
             IconAnimation(icon: icon),
             const SizedBox(height: 25),
             Text(
-              title!,
+              title,
               style: TextStyle(
                 color: black,
                 fontSize: 20,
@@ -234,7 +241,7 @@ class _SmallScreenAlertState extends State<SmallScreenAlert>
           IconAnimation(icon: icon),
           const SizedBox(height: 20),
           Text(
-            title!,
+            title,
             style: TextStyle(
               color: black,
               fontSize: 20,

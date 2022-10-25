@@ -5,9 +5,9 @@ import 'package:pop_alert/src/responsiveness/responsiveness.dart';
 import 'package:pop_alert/src/responsiveness/small_screen_alert.dart';
 
 class Layout extends StatelessWidget {
-  final String? type;
+  final String type;
   final String? icon;
-  final String? title;
+  final String title;
   final String? text;
   final String? button;
 
