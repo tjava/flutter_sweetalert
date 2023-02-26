@@ -23,8 +23,8 @@ class SmallScreenAlert extends StatefulWidget {
 
 class _SmallScreenAlertState extends State<SmallScreenAlert>
     with SingleTickerProviderStateMixin {
-  late AnimationController controller;
-  late Animation<double> scaleAnimation;
+  late final AnimationController controller;
+  late final Animation<double> scaleAnimation;
 
   @override
   void initState() {

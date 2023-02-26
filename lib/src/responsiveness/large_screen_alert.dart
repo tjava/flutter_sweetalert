@@ -23,8 +23,8 @@ class LargeScreenAlert extends StatefulWidget {
 
 class _LargeScreenAlertState extends State<LargeScreenAlert>
     with SingleTickerProviderStateMixin {
-  late AnimationController controller;
-  late Animation<double> scaleAnimation;
+  late final AnimationController controller;
+  late final Animation<double> scaleAnimation;
 
   @override
   void initState() {

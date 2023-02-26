@@ -11,7 +11,7 @@ class IconAnimation extends StatefulWidget {
 
 class _IconAnimationState extends State<IconAnimation>
     with SingleTickerProviderStateMixin {
-  late AnimationController controller;
+  late final AnimationController controller;
 
   @override
   void initState() {

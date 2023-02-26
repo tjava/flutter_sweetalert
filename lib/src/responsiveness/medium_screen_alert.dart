@@ -23,8 +23,8 @@ class MediumScreenAlert extends StatefulWidget {
 
 class _MediumScreenAlertState extends State<MediumScreenAlert>
     with SingleTickerProviderStateMixin {
-  late AnimationController controller;
-  late Animation<double> scaleAnimation;
+  late final AnimationController controller;
+  late final Animation<double> scaleAnimation;
 
   @override
   void initState() {
